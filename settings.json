@@ -1,23 +1,21 @@
 {
-  "name": "AFK Bot - Slobot00",
-  "version": "2.0",
+  "name": "AFK Bot",
   "bot-account": {
-    "username": "Lian",
+    "username": "Slobot00",
     "password": "",
     "type": "offline"
   },
   "server": {
     "ip": "GameFest.aternos.me",
     "port": 31954,
-    "version": "1.20.1",
+    "version": "",
     "try-creative": false
   },
   "position": {
     "enabled": true,
     "x": 0,
     "y": 100,
-    "z": 0,
-    "teleport-on-spawn": true
+    "z": 0
   },
   "utils": {
     "auto-auth": {
@@ -26,51 +24,37 @@
     },
     "anti-afk": {
       "enabled": true,
-      "sneak": true,
-      "swing-arm": true
+      "sneak": true
     },
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 900,
-      "randomize": false,
+      "repeat-delay": 120,
       "messages": [
-        "👋 Bienvenido constructor, te damos la bienvenida a GameFest 2026.",
-        "🏛 Hoy escribirás un nuevo capítulo en la historia de la PUCE Esmeraldas.",
-        "📜 Los grandes proyectos comienzan con un solo bloque.",
-        "🎨 Imagina, diseña y construye sin límites.",
-        "⭐ Tu obra podría convertirse en una de las mejores del evento.",
-        "🤝 La creatividad florece cuando trabajamos con respeto.",
-        "🏆 Que gane la construcción más inspiradora.",
-        "🌟 El futuro se construye bloque a bloque.",
-        "📚 Celebremos juntos 45 años de historia universitaria."
+        "I'm a regular player",
+        "Subscribe to Slobos!",
+        "I like to play Minecraft!"
       ]
     },
     "chat-log": true,
     "auto-reconnect": true,
-    "auto-reconnect-delay": 3000,
-    "max-reconnect-delay": 60000,
-    "reconnect-attempts": 10
+    "auto-reconnect-delay": 2000,
+    "max-reconnect-delay": 120000
   },
   "movement": {
     "enabled": true,
     "circle-walk": {
       "enabled": true,
-      "radius": 5,
-      "speed": 2500
+      "radius": 4,
+      "speed": 3000
     },
     "look-around": {
       "enabled": true,
-      "interval": 4000
+      "interval": 5000
     },
     "random-jump": {
       "enabled": true,
-      "interval": 15000
-    },
-    "random-walk": {
-      "enabled": true,
-      "interval": 30000,
-      "max-distance": 3
+      "interval": 10000
     }
   },
   "modules": {
@@ -78,18 +62,11 @@
     "combat": true,
     "beds": false,
     "chat": true,
-    "console-commands": true,
-    "pathfinder": true
+    "console-commands": true
   },
   "combat": {
     "attack-mobs": true,
-    "attack-range": 3.5,
-    "auto-eat": true,
-    "eat-health-threshold": 14,
-    "eat-food-priority": ["golden_apple", "cooked_beef", "bread", "apple"],
-    "flee-on-low-health": true,
-    "flee-health-threshold": 4,
-    "pvp": false
+    "auto-eat": true
   },
   "beds": {
     "pick-up-day": false,
@@ -97,26 +74,14 @@
   },
   "discord": {
     "enabled": false,
-    "webhookUrl": "",
-    "username": "Slobot00 AFK Bot",
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
     "events": {
       "connect": true,
       "disconnect": true,
-      "chat": false,
-      "death": true,
-      "low-health": true
+      "chat": false
     }
   },
   "chat": {
-    "respond": true,
-    "respond-to-mentions": true,
-    "mention-response": "Hey! Soy Lian Bienvenido al GameFest :)",
-    "block-spam": true
-  },
-  "logging": {
-    "enabled": true,
-    "log-to-file": true,
-    "log-file": "./logs/slobot.log",
-    "log-level": "info"
+    "respond": true
   }
 }
